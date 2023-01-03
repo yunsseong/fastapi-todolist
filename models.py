@@ -4,7 +4,7 @@ from database import Base
 class Todo(Base):
     __tablename__ = "todo"
 
-    id = Column(Integer, primary_key=True)
+    id = Column(String, primary_key=True)
     title = Column(String, nullable=False)
     order = Column(Integer, nullable=False)
     done = Column(Boolean)
